@@ -1,585 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Firmbee.com - Free Project Management for remote teams">
-    <link href="img/goSM1.png" rel="icon">
-    <link href="img/goSM1.png" rel="apple-touch-icon">
-    <title>da'Koj Portfolio</title>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resposive.css">
 
-    <!-- Style css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+
 </head>
-
-<body data-spy="scroll" data-target="#navbar">
-    <!-- Navigation -->
-    <div class="row justify-content-end">
-        <div class="col-12 col-lg-7 col-xl-6 col-xxl-5">
-            <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 ms-auto">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i id="mobile-toggler" class="bi bi-list"></i></span>
-                </button>
-                <button id="toggler" class="navbar-toggler navbar-toggler-big" type="button" data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"><i
-                        class="bi bi-list"></i></button>
-                <div class="collapse navbar-collapse shadow-bg" id="navbarNavAltMarkup">
-                    <div class="navbar-nav p-5">
-                        <a class="nav-item nav-link active text-center mx-3" href="#home">Home</a>
-                        <a class="nav-item nav-link text-center mx-3" href="#about">About</a>
-                        <a class="nav-item nav-link text-center mx-3" href="#portfolio">Portfolio</a>
-                        <a class="nav-item nav-link text-center mx-3" href="#experience">Experience</a>
-                        <a class="nav-item nav-link text-center mx-3" href="#skill">Skill</a>
-                        <a class="nav-item nav-link text-center mx-3" href="#contact">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+<body>
+    <header>
+      <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <!-- First section -->
-    <div id="home" class="frontpage">
-        <div class="wrapper">
-            <header>
-                <div class="row">
-                    <div class="left col-12 col-lg-4">
-                        <div class="col-4 d-none d-lg-block">
-                            <div class="logo">
-                                <a href="#">
-                                    <img src="img/goSM.png" alt="Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="header">
-                                <div class="header-text">
-                                    <h1>
-                                        XIN CHÀO I'm <span class="highlighted">da'Koj</span> 
-                                    </h1>
-                                </div>
-                            </div>
-                            <div class="row justify-content-lg-start justify-content-center buttons">
-                                <div class="col-7 col-sm-3 col-lg-5">
-                                    <a class="main-button btn-view-portfolio text-center" href="#portfolio">View
-                                        portfolio</a>
-                                </div>
-                                <div class="col-7 col-sm-3 col-lg-5">
-                                    <a class="button text-center" href="#contact">Contact</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-12">
-                                <div class="indicators">
-                                    <span class="indicator-main" onclick="currentSlide(1)"></span>
-                                    <span class="indicator-main" onclick="currentSlide(2)"></span>
-                                    <span class="indicator-main" onclick="currentSlide(3)"></span>
-                                    <span class="indicator-main" onclick="currentSlide(4)"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 ">
-                                <div class="d-none d-lg-block scroll-item">
-                                    <i class="bi bi-mouse me-2 align-middle"></i><span class="scroll-text">Scroll
-                                        down</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8">
-                        <div class="gallery">
-                            <div class="slide fade">
-                                <img src="img/slides/1.png" alt="1">
-                            </div>
-                            <div class="slide fade">
-                                <img src="img/slides/2.png" alt="2">
-                            </div>
-                            <div class="slide fade">
-                                <img src="img/slides/3.png" alt="3">
-                            </div>
-                            <div class="slide fade">
-                                <img src="img/slides/4.png" alt="4">
-                            </div>
-                            <div class="arrows d-none d-lg-block">
-                                <a class="arrow-right" onclick="plusSlides(1)"><i class="bi bi-arrow-right"></i></a>
-                                <a class="arrow-left" onclick="plusSlides(-1)"><i class="bi bi-arrow-left"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
+    </header>
+    <div id="mobile-menu" class="mobile-menu-btn" onclick="toggleMenu()">
+      <i class="ti-menu"></i>
     </div>
-
-    <main>
-        <!-- Fourth section -->
-        <section id="about">
-            <div class="team">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-12 col-md-6">
-                            <h2>About <span class="highlighted">me</span></h2>
-                            <p class="mt-5">
-                                <span class="highlighted">Full Name : </span> Le Nguyen Dang Khoi <br>
-                                <span class="highlighted">D.O.B : </span> 08/10/2002 <br>
-                                <span>Male </span> <br>
-                                <span class="highlighted">Location : </span> Vietnam <br>
-
-
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img class="img-fluid" src="img/goSM1.png" alt="Ava">
-                        </div>
-                    </div>
-                </div>
+    <div id="scroll-up" class="scroll-btn" onclick="scrollUp()">
+      <i class="ti-arrow-up"></i>
+    </div>
+    <div id="scroll-down" class="scroll-btn" onclick="scrollDown()">
+      <i class="ti-arrow-down"></i>
+    </div>
+    <div id="view" class="view-btn" onclick="viewProject()">
+      <a>View Projects</a>
+    </div>
+    <!-- Content -->
+    <div id="home" class="home section">
+      <div class="portfolio">
+        <div class="text">
+          <span>Port</span>
+          <a>F</a>
+          <span>olio</span>
+        </div>
+      </div>
+        <div class="body">
+          <div class="slider">
+            <div class="item">
+              <img src="1.jpg" alt="">
+              <div class="text">@Da'Koj <br> #20021008 <br> 11111100DK
+              </div>
             </div>
-        </section>        
-        <!-- Second section -->
-        <section id="portfolio">
-            <!--  id only for scrolling -->
-            <div class="portfolio">
-                <div class="portfolio-header-area">
-                    <div class="container">
-                        <div class="portfolio-header">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-4">
-                                    <h2>Portfolio</h2>
-                                </div>
-                                <div id="filters" class="col-12 col-lg-8">
-                                    <div class="row">
-                                        <div class="col-6 col-sm-3">
-                                            <button class="btn-portfolio active" data-filter="*">All projects</button>
-                                        </div>
-                                        <div class="col-6 col-sm-3">
-                                            <button class="btn-portfolio" data-filter=".c1">UI UX</button>
-                                        </div>
-                                        <div class="col-6 col-sm-3">
-                                            <button class="btn-portfolio" data-filter=".c2">Front-end</button>
-                                        </div>
-                                        <div class="col-6 col-sm-3">
-                                            <button class="btn-portfolio" data-filter=".c3">Graphic</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-body">
-                    <div class="container">
-                        <div class="row grid">
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w1.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 2</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w2.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 2</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w3.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 3</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w4.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 2</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w5.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 2</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w6.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 1</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w7.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 2</p>
-                                        <button class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w8.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 2</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w9.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 2</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w10.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 3</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w11.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 1</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-sm-4 all c3">
-                                <figure class="hover-img">
-                                    <img class="img-fluid" src="img/portfolio/w12.png" alt="Graphic">
-                                    <div class="overlay"></div>
-                                    <div class="text">
-                                        <h3>Poster</h3>
-                                        <p>Category 3</p>
-                                        <a class="see-more-button" href="https://www.instagram.com/dakoj.art/">See more</a>
-                                    </div>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <a id="load-more" class="main-button my-5">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="item">
+              <img src="2.jpg" alt="">
+              <div class="text">@Da'Koj <br> #20021008 <br> 11111100DK
+              </div>
             </div>
-        </section>
-
-
-
-        <!-- Second secrtion -->
-        <section>
-            <div id="experience">
-                <div class="expertize container">
-
-                    <div class="cards row justify-content-between">
-                        <div class="col-3">
-                            <div id="headingOne" class="card" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                <i class="card-icon bi bi-lightbulb"></i>
-                                <p class="subtitles">Front-end <br> Developer</p>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div id="headingTwo" class="card collapsed" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="card-icon bi bi-palette2"></i>
-                                <p class="subtitles">Graphic <br> Designer</p>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="card-icon bi bi-diagram-3"></i>
-                                <p class="subtitles">UI UX <br> Designer</p>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
-                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="card-icon bi bi-chat-dots"></i>
-                                <p class="subtitles">Ecommerce <br> Business</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div id="collapseOne" class="content row collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordion">
-                        <div class="col-15 col-lg-5">
-                            <h2>Front-end <br><span class="highlighted">Developer</span></h2>
-                        </div>
-                        <div class="col-12 col-lg-7">
-                            <p> +Thành thạo HTML, CSS, JavaScript.<br>
-                                +Có kinh nghiệm sử dụng Bootstrap, Foundation.<br>
-                                +Có kiến thức cơ bản về jQuery, Git.<br>
-                                +Hiểu biết về UX/UI.<br>
-                                +Kỹ năng giải quyết vấn đề và tư duy logic tốt.<br>
-                                +Kỹ năng giao tiếp và làm việc nhóm hiệu quả.<br>
-                                _______________________________________________________________
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="collapseTwo" class="content row collapse" aria-labelledby="headingTwo"
-                        data-parent="#accordion">
-                        <div class="col-12 col-lg-5">
-                            <h2>Graphic <br><span class="highlighted">Designer</span></h2>
-                        </div>
-                        <div class="col-12 col-lg-7">
-                            <p> +Thành thạo các phần mềm thiết kế như Photoshop, Illustrator...<br>
-                                +Thiết kế logo, bộ nhận diện thương hiệu.<br>
-                                +Thiết kế ấn phẩm in ấn: Brochure, catalogue, poster, banner...<br>
-                                +Kiến thức về typography, bố cục, màu sắc.<br>
-                                +Khả năng sáng tạo và tư duy thẩm mỹ cao.<br>
-                                +Có 6 năm kinh nghiệm làm freelance designer.<br>
-                                _______________________________________________________________
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="collapseThree" class="content row collapse" aria-labelledby="headingThree"
-                        data-parent="#accordion">
-                        <div class="col-12 col-lg-5">
-                            <h2>UI UX <br><span class="highlighted">Designer</span></h2>
-                        </div>
-                        <div class="col-12 col-lg-7">
-                            <p>+Hiểu biết về các nguyên tắc thiết kế giao diện,trải nghiệm người dùng.<br>
-                                +Thành thạo các công cụ thiết kế như Photoshop, Illustrator, Figma.<br>
-                                +Có khả năng nghiên cứu người dùng để hiểu nhu cầu của họ.<br>
-                                +Có khả năng thiết kế giao diện đẹp mắt, dễ sử dụng và phù hợp.<br>
-                                +Có khả năng thiết kế tương tác trực quan người dùng và sản phẩm.<br>
-                                +Có kiến thức cơ bản về HTML, CSS và JavaScript.<br>
-                                _______________________________________________________________
-                                </p>
-                        </div>
-                    </div>
-
-                    <div id="collapseFour" class="content row collapse" aria-labelledby="headingFour"
-                        data-parent="#accordion">
-                        <div class="col-12 col-lg-5">
-                            <h2>Ecommerce<br><span class="highlighted">Business</span></h2>
-                        </div>
-                        <div class="col-12 col-lg-7">
-                            <p>+Nắm bắt xu hướng thị trường, nhu cầu của khách hàng và các đối thủ.<br>
-                                +Xây dựng chiến lược bán, quảng bá sản phẩm, chăm sóc khách hàng.<br>
-                                +Quản lý kho hàng, đơn hàng, vận chuyển và thanh toán.<br>
-                                +Kỹ năng marketing online: SEO, Social media marketing.<br>
-                                +Phân tích hiệu quả hoạt động kinh doanh và đưa quyết định phù hợp.<br>
-                                +Kiến thức về nền tảng thương mại điện tử: Lazada, Shopee...</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="item">
+              <img src="3.jpg" alt="">
+              <div class="text">@Da'Koj <br> #20021008 <br> 11111100DK
+              </div>
             </div>
-        </section>
-                <!-- Third section -->
-                <section>
-                    <div id="skill">
-                    <div class="skill">
-                        <hr>
-                        <div class="container">
-                            <div class="row clients-area align-items-center">
-                                <div class="col-12 col-lg-3 col-xl-4 mb-3">
-                                    <h2>Skill</h2>
-                                </div>
-                                <div class="col-12 col-lg-9 col-xl-8">
-                                    <div class="row align-items-end">
-                                        <div class="col-12 col-sm-4">
-                                            <img src="img/icons/1.png" alt="firmbee">
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <img  src="img/icons/2.png" alt="create paper">
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <img src="img/icons/3.png" alt="point design">
-                                        </div>
-                                        <p>
-                                         ____________________________________________________________________
-                                            </p><br>
-                                        <div class="col-12 col-sm-4">
-                                            <img src="img/icons/4.png" alt="firmbee">
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <img  src="img/icons/5.png" alt="create paper">
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <img src="img/icons/6.png" alt="point design">
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                </div>
-                </section>
-        <!-- Fifth section -->
-        <section id="contact">
-            <div class="contact">
-                <hr class="m-0">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="contact-form col-12 col-sm-6 col-md-7">
-                            <h2>Contact</h2>
-                            <form action="mailto:example@example.com" method="post" class="needs-validation" novalidate>
-                                <div class="form-group mt-5">
-                                    <label class="col-12">Full Name</label>
-                                    <input class="col-12" type="text" id="fname" placeholder="Full name" name="fname"
-                                        required>
-                                    <div class="invalid-feedback warning">Please write a full name.</div>
-                                </div>
-                                <div class="form-group mt-5">
-                                    <label class="col-12">E-mail</label>
-                                    <input class="col-12" type="email" id="email" placeholder="E-mail" name="email"
-                                        required>
-                                    <div class="invalid-feedback warning">Please write a correct e-mail.</div>
-                                </div>
-                                <div class="form-group mt-5">
-                                    <label class="col-12">Message</label>
-                                    <input class="col-12" type="text" id="message" placeholder="Message" name="message"
-                                        required>
-                                    <div class="invalid-feedback warning">Please write a message.</div>
-                                </div>
-                                <div class="form-group row justify-content-end">
-                                    <div class="col-12 col-lg-5 mb-5 justify-content-start justify-content-sm-end">
-                                        <button type="submit" name="submit" class="main-button">Send message</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="media row my-5">
-                                <div class="col-12 col-lg-4">
-                                    <p>Social media</p>
-                                    <p class="warning">
-                                        <a href="https://www.instagram.com/dakoj__/" target="_blank">
-                                            <i class="bi bi-instagram"></i>
-                                        </a>
-                                        <a href="https://www.facebook.com/dakojjjjjjjj/" target="_blank">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
-                                        <a href="https://twitter.com/" target="_blank">
-                                            <i class="bi bi-twitter"></i>
-                                        </a>
-                                        <a href="https://linkedin.com/" target="_blank">
-                                            <i class="bi bi-linkedin"></i>
-                                        </a>
-                                    </p>
-                                </div>
-                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
-                                    <p>Contact me via e-mail</p>
-                                    <a href="dakoj.art@gmail.com" class="warning">dakoj.art@gmail.com</a>
-                                </div>
-                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
-                                    <p>My phone</p>
-                                    <a href="+84 775120913" class="warning">+84 775120913</a>
-                                </div>
-                            </div>
-                            
+            <div class="item ">
+              <img src="4.jpg" alt="">
+              <div class="text">@Da'Koj <br> #20021008 <br> 11111100DK
+              </div>
+            </div>
+            <div class="item ">
+              <img src="5.jpg" alt="">
+              <div class="text">@Da'Koj <br> #20021008 <br> 11111100DK
+              </div>
+            </div>
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+        <div class="hello">
+          <div class="vie">
+            <h1>xin chào</h1>
+          </div>
+          <div class="name">
+            <h2>Da'Koj</h2>
+          </div>
+          <div class="eng">
+            <h4>"hi"</h4>
+            <span>I'm</span>
+          </div>
+          <div class="chi">
+            <h3>你好</h3>
+          </div>
 
-                            <button class="up" onclick="topFunction()" id="top" title="Go to top">
-                                <i class="bi bi-arrow-up"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-               
+        </div> 
         
-            </div>
-        </section>
-    </main>
+      </div>
+      <div class="credit"> 
+        <a>&lt;Belive in yourself/&gt;</a>
 
-    <!-- Bootstrap core JavaScript
-            ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        
+      </div>
+    </div>
+      
+    <div id="about" class="section">About Section</div>
+    <div id="projects" class="section">Projects Section</div>
+    <div id="store" class="section">Store Section</div>
+    <div id="contact" class="section">Contact Section</div>
 
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-
-    <!-- Isotope gallery -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <!-- or -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- Custom JS codes -->
-    <script src="js/gallery.js"></script>
-    <script src="js/slides.js"></script>
-    <script src="js/scrolls.js"></script>
-    <script src="js/validation.js"></script>
-
-    <!--
-    This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
-    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-    -->
-
+    <script src="scripts.js"></script>
 </body>
-
 </html>

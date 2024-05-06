@@ -1,0 +1,137 @@
+@media (max-width: 740px) {
+    header {
+        width: 10%;
+        left: 0;
+        height: 300px;
+        text-align: center;
+        display: none;  
+      }
+      .mobile-menu-btn{
+        top: 20px;
+        right: 20px;
+        padding: 20px;
+      }
+      .ti-arrow-down {
+        padding: 20px;
+
+      }
+      .ti-arrow-up {
+        padding: 20px;
+
+      }
+
+      .view-btn {
+        top: 77%;
+        left: 45%;
+        padding: 10px;
+        font-size: small;
+        font-weight: bold;
+      }
+      .slider {
+        width: 100%;
+        height: 50%;
+      }
+      .slider .item {
+        width: 30%;
+        left: 34%;
+      }
+      .slider #next{
+        position: absolute;
+        right: 5%;
+      }
+      .slider #prev{
+        position: absolute;
+        left: 80%;
+      
+      }
+      .slider #prev, #next{
+        top: -11%;
+        padding: 5px 10px;
+        font-size: small;
+        font-family: monospace;
+        font-weight: 100;
+      }
+
+      .hello .vie {
+        width: 100%;
+        height: 25%;
+
+      }
+
+      .hello .name {
+        width: 100%;
+        height: 25%;
+      }
+
+      .hello .chi h3{
+        top: 48%;
+        left: 80%;
+        font-size: 1rem;
+        padding: 5px;
+
+      }
+
+      .hello .eng h4 {
+        top: 25%;
+        left: 0;
+        font-size: 1.5rem;
+        background-color: #fff;
+      }
+
+      .hello .eng span {
+        top: 60%;
+        font-size: 3rem;
+      }
+
+      .credit {
+        width: 100%;
+
+        
+      }
+  }
+
+  @media (min-width: 740px) and (max-width: 1023px) {
+    header{
+        width: 10%;
+        right: 100px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .view-btn {
+        top: 77%;
+        left: 38%;
+        background-color: #fff;
+        color: #fb8500;
+        border: 2px solid #fb8500;
+      
+      }
+
+      .view-btn:hover {
+
+        background-color: #fb8500;
+        color: #fff;
+        border: 2px solid #fb8500;
+      
+      }
+            
+    .hello .name {
+        width: 67%;
+
+      }
+      
+      .slider {
+        height: 50%;
+      }
+
+      .credit {
+        background-color: #ffffff;  
+        width: 100%;
+   
+      }
+
+      .credit a{
+        margin-top: 60px;
+        
+      }
+  }
