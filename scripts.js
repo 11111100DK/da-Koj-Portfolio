@@ -11,7 +11,7 @@ function scrollFunction() {
 
 
     // Kiểm tra xem phần "About" có nằm trong tầm nhìn không
-    if (aboutSection.getBoundingClientRect().top <= 0) {
+    if (aboutSection.getBoundingClientRect().top <= 50) {
         if (!aboutReached) {
             header.classList.add('hidden');
             header.style.display = 'none';
@@ -179,3 +179,93 @@ function viewProject() {
     projectsSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+function viewStore() {
+  // Lấy vị trí của section "Projects"
+  const projectsSection = document.getElementById('store');
+  // Cuộn trang xuống section "Projects"
+  projectsSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+const productContainers = [...document.querySelectorAll('.project-container')];
+const nxtBtn = [...document.querySelectorAll('.ti-arrow-right')];
+const preBtn = [...document.querySelectorAll('.ti-arrow-left')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += 340;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= 340;
+    })
+})
+
+function runCounter(elementId, target, duration, isDate = false, isFloat = false, isPlus = false) {
+    let count = 0;
+    let increment = target / (duration / 100);
+    let element = document.getElementById(elementId);
+  
+    let intervalId = setInterval(() => {
+      if (count < target) {
+        count += increment;
+        if (isDate) {
+          let date = new Date(Math.ceil(count));
+          element.innerText = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
+        } else if (isFloat) {
+          element.innerText = `${count.toFixed(1)}`;
+        } else {
+          element.innerText = isPlus ? `${Math.ceil(count)}+` : `${Math.ceil(count)}`;
+        }
+      } else {
+        clearInterval(intervalId);
+        if (isDate) {
+          let date = new Date(target);
+          element.innerText = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
+        } else if (isFloat) {
+          element.innerText = `${target.toFixed(1)}`;
+        } else {
+          element.innerText = isPlus ? `${target}+` : `${target}`;
+        }
+      }
+    }, 100);
+  }
+  
+  let hasStarted = false;
+  
+  window.addEventListener('scroll', () => {
+    let storeSection = document.getElementById('store'); // Thay 'store' bằng id của section bạn muốn
+    let position = storeSection.getBoundingClientRect();
+  
+    // Kiểm tra nếu người dùng đã kéo xuống vị trí "store section" và hàm chạy số chưa được bắt đầu
+    if (position.top <= window.innerHeight && !hasStarted) {
+      hasStarted = true; // Đánh dấu hàm chạy số đã bắt đầu
+  
+      // Bắt đầu chạy số
+      runCounter('followerCount', 3100, 10000, false, false, true);
+      runCounter('starCount', 4.9, 10000, false, true);
+      runCounter('rateCount', 3600, 10000, false, false, true);
+      runCounter('customerCount', 2000, 10000, false, false, true);
+    }
+  });
+
+  let slideIndex = 0;
+  showSlide(slideIndex);
+  
+  setInterval(() => {
+    slideIndex++;
+    showSlide(slideIndex);
+  }, 3000); // Change slide every 3 seconds
+  
+  function showSlide(n) {
+    let slides = document.getElementsByClassName("img-slide");
+    if (n >= slides.length) {
+      slideIndex = 0;
+    }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+  }

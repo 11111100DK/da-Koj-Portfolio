@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <link rel="icon" href="./DK5.png" type="image/x-icon">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="resposive.css">
@@ -21,7 +21,6 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#store">Store</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -35,9 +34,7 @@
     <div id="scroll-down" class="scroll-btn" onclick="scrollDown()">
       <i class="ti-arrow-down"></i>
     </div>
-    <div id="view" class="view-btn" onclick="viewProject()">
-      <a>View Projects</a>
-    </div>
+
     <!-- Content -->
     <div id="home" class="home section">
       <div class="portfolio">
@@ -82,7 +79,7 @@
             <h1>xin chào</h1>
           </div>
           <div class="name">
-            <h2>Da'Koj</h2>
+            <h2>da'Koj</h2>
           </div>
           <div class="eng">
             <h4>"hi"</h4>
@@ -96,16 +93,270 @@
         
       </div>
       <div class="credit"> 
-        <a>&lt;Belive in yourself/&gt;</a>
+        <div class="color1">
+          <div id="view1" class="view-btn1" onclick="viewProject()">
+            <a>View Projects</a>
+          </div>
+          <div id="view2" class="view-btn2" onclick="viewStore()">
+            <a>View Store</a>
+          </div>
 
+        </div>
+
+        <a>&lt;Belive in yourself/&gt;</a>
+        <div class="color2"></div>
         
       </div>
     </div>
       
-    <div id="about" class="section">About Section</div>
-    <div id="projects" class="section">Projects Section</div>
-    <div id="store" class="section">Store Section</div>
-    <div id="contact" class="section">Contact Section</div>
+    <div id="about" class="about section">
+      <div class="about-me">
+        <div class="title">
+          <h1>About Me</h1>
+        </div>
+        <div class="content">
+          <div class="text">
+            <h2>Hello everyone, <br>I'm Lê Nguyễn Đăng Khôi </h2>
+            <i class="ti-location-pin"></i>
+            <span>Phú Nhuận - Hồ Chí Minh City</span>
+            <br><i class="ti-calendar"></i>
+            <span>2002</span>
+            <p>
+              I'm a web developer and designer based in Vietnam. I have a passion for web design and love to create for web and mobile devices. I have a strong foundation in web technologies and programming languages such as HTML, CSS, JavaScript, React, Node.js, and MongoDB. I'm always looking for new opportunities to learn and grow as a developer.
+            </p>
+            <br><br>
+          </div>
+          <div class="logo">
+            <img src="./DK4.png" alt="da'Koj Logo">
+          </div>
+        </div>
+          <div class="work">
+            <div class="experience">
+              <h2>Experineces</h2><br>
+              <i class="ti-palette"></i>
+              <span>Freelance Graphic Designer</span><br>
+              <span>AUG 2020 - NOW</span><br>
+              <p>
+                I have been working as a freelance graphic designer for the past two years. I have worked with clients from around the world to create logos, branding, and marketing materials for their businesses. I have a strong foundation in design principles and a keen eye for detail.
+              </p><br>
+              <i class="ti-bar-chart"></i>
+              <span>eCommerce Business</span><br>
+              <span>APR 2022 - NOW</span><br>
+              <p>
+                I have recently started an eCommerce business selling handmade jewelry. I have created a website to showcase my projects and reach a wider audience. I have experience in digital marketing and social media management.
+              </p>
+            </div>
+          <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Photoshop</li>
+              <li>Figma</li>
+              <li>Illustrator</li>
+              <li>C#</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2>Contacts</h2>
+            <div class="icon">
+              <i class="ti-facebook" onclick="window.open('https://www.facebook.com/dakojjjjjjjj/')"></i>
+              <i class="ti-instagram" onclick="window.open('https://www.instagram.com/dakoj__/')"></i>
+              <i class="ti-github" onclick="window.open('https://github.com/11111100DK')"></i>
+              <i class="ti-email" onclick="window.location.href='mailto:lndksky@gmail.com'"></i>
+              <i class="ti-linkedin" onclick="window.open('https://linkedin.com')"></i>
+            </div>
+            <p>077 5120 913</p>
+            <p>lndangkhoi@gmail.com</p>
+
+          </div>
+      </div>
+    </div>
+    <div id="projects" class="projects section">
+      <div class="project-category">
+        <h1>My Projects</h1>
+      </div>
+      <div class="project-container">
+        <i class="ti-arrow-left"></i>
+        <i class="ti-arrow-right"></i>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">Poster</span>
+                  <img src="1.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">UI-UX</span>
+                  <img src="2.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">Card</span>
+                  <img src="3.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">Poster</span>
+                  <img src="4.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">App</span>
+                  <img src="5.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">Name</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">UI-UX</span>
+                  <img src="1.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">Web</span>
+                  <img src="2.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">Soccer Card</span>
+                  <img src="3.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">Branding</span>
+                  <img src="4.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <span class="discount-tag">UI-UX</span>
+                  <img src="5.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">see more</button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-brand">brand</h2>
+                  <p class="project-short-description">a short line about the cloth..</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-category">
+        <h1>My Products</h1>
+      </div>
+    </div>
+    <div id="store" class="store section">
+      <div class="store-body">
+      <div class="title">
+        <h1>My Store</h1>
+      </div>
+    <div class="information">
+      <div class="info">
+        <h1>SKY labels</h1>
+        <h2 id="dateCount">Since 01/04/2022</h2>
+        <p>
+          SKY labels is my small business where I sell cards design by me. I have a passion for design and love to create unique and beautiful cards for my customers. 
+I also offer custom design services for customers who want something special.
+    <div class="img-slider">
+      <div class="img-slide" id="img-slide1">
+        <img src="1.jpg" alt="Image 1">
+      </div>
+      <div class="img-slide" id="img-slide2">
+        <img src="2.jpg" alt="Image 2">
+      </div>
+      <div class="img-slide" id="img-slide3">
+        <img src="3.jpg" alt="Image 3">
+      </div>
+    </div>
+
+      </div>
+      <div class="screen">
+        <img src="./shopee.png" alt="">
+        <a id="visit" class="visit-btn" href="https://shopee.vn/skylabels" target="_blank">Visit My Store</a>
+      </div>
+    </div>
+    <div class="welcome">
+      <div class="followers">
+        <h2 id="followerCount">0</h2>
+        <h3>Followers</h3>
+      </div>
+      <div class="star">
+        <h2 id="starCount">0</h2>
+        <h3>/5.0 Star</h3>
+      </div>
+      <div class="rate">
+        <h2 id="rateCount">0</h2>
+        <h3>Ratings</h3>
+      </div>
+      <div class="customer">
+        <h2 id="customerCount">0+ </h2>
+        <h3>Customers</h3>
+      </div>
+    </div>    
+  </div>
+</div>
+
+    <div id="footer" class="footer">
+      <h1>Thank you for visiting <br> my world !</h1><br>
+      <p>Designed by @da'Koj</p>
+      <p>May 2024</p><br>
+
+    </div>
 
     <script src="scripts.js"></script>
 </body>

@@ -4,11 +4,11 @@
         left: 0;
         height: 300px;
         text-align: center;
-        display: none;  
+        display: none;
+        overflow: hidden;  
       }
       .mobile-menu-btn{
-        top: 20px;
-        right: 20px;
+
         padding: 20px;
       }
       .ti-arrow-down {
@@ -20,12 +20,13 @@
 
       }
 
-      .view-btn {
-        top: 77%;
-        left: 45%;
+      .view-btn1,
+      .view-btn2 {
+        margin: 2px;
         padding: 10px;
-        font-size: small;
-        font-weight: bold;
+        width: 40%;
+
+
       }
       .slider {
         width: 100%;
@@ -62,7 +63,11 @@
         width: 100%;
         height: 25%;
       }
+      .hello .name h2{
 
+        font-size: 6rem;
+        padding: 0;
+      }
       .hello .chi h3{
         top: 48%;
         left: 80%;
@@ -72,10 +77,10 @@
       }
 
       .hello .eng h4 {
-        top: 25%;
+        top: 20%;
         left: 0;
         font-size: 1.5rem;
-        background-color: #fff;
+        background-color: #4F709C;
       }
 
       .hello .eng span {
@@ -84,11 +89,110 @@
       }
 
       .credit {
+        padding-top: 10%;
         width: 100%;
+        display: block;
+        text-align: center;
 
-        
       }
+      .credit a{
+        position: relative;
+        width: 100%;
+        top: 20%;
+        z-index: 10;
+      }
+      .credit .color1 {
+        width: 100%;
+      }
+      .credit .color2 {
+        width: 0%;
+      }
+      .about .title {
+        font-size: 2rem;
+
+      }
+      .about .content,
+      .about .work {
+        display: block;
+        width: 100%;
+        }
+        .about .text,
+.about .logo,
+.about .experience,
+.about .skills{
+  width: 100%;
+  margin-left:0;
+  margin-top: 5px;
+}
+.about .skills ul{
+margin-top: 5px;
+}
+.about .skills li{
+margin: 5px 5px 5px 0; 
+}
+.about .contact {
+  text-align: left;
+}
+.about .icon i {
+  margin: 0 10px;
+}
+.about .contact p {
+  text-align: center;
+}
+.project-category {
+
+  font-size:1rem;
+  line-height: 4;
+}
+.product-category {
+  font-size:1rem;
+  line-height: 4;
   }
+  .store .title {
+
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .store .information{
+    display: inline-block;
+  
+  }
+  .store .info{
+    width: 100%;
+    padding: 0 5% 0 5%;
+  }
+  .img-slide {
+    padding: 0;
+  }
+  .store .screen{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 20px;
+  }
+  #visit {
+  }
+  .visit-btn {
+    font-size: 1rem;
+  }
+  .store .welcome {
+
+    line-height: 4;
+  }
+  .store .welcome h2{
+    font-size: 1.6rem;
+    
+    line-height: 2;
+  }
+  .store .welcome h3{
+    font-size: 0.8rem;
+
+    line-height: 2;
+  }
+  .footer h1 {
+    color: #4F709C;
+    font-size: 1.5rem;
+  }
+}
 
   @media (min-width: 740px) and (max-width: 1023px) {
     header{
@@ -96,24 +200,10 @@
         right: 100px;
         height: 300px;
         text-align: center;
+        display: none;
+
     }
 
-    .view-btn {
-        top: 77%;
-        left: 38%;
-        background-color: #fff;
-        color: #fb8500;
-        border: 2px solid #fb8500;
-      
-      }
-
-      .view-btn:hover {
-
-        background-color: #fb8500;
-        color: #fff;
-        border: 2px solid #fb8500;
-      
-      }
             
     .hello .name {
         width: 67%;
@@ -123,15 +213,31 @@
       .slider {
         height: 50%;
       }
-
-      .credit {
-        background-color: #ffffff;  
-        width: 100%;
-   
+      .slider .item {
+        width: 30%;
+        left: 34%;
       }
+      .credit {
+        padding-top: 10%;
+        width: 100%;
+        display: block;
+        text-align: center;
 
+      }
       .credit a{
-        margin-top: 60px;
-        
+        position: relative;
+        width: 100%;
+        top: 20%;
+        z-index: 10;
+      }
+      .credit .color1 {
+        width: 100%;
+      }
+      .credit .color2 {
+        width: 0%;
+      }
+      .footer h1 {
+        color: #4F709C;
+        font-size: 2rem;
       }
   }
