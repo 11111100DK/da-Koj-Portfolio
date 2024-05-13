@@ -132,6 +132,8 @@
 }
 body {
   background-color: #F0F0F0;
+  min-width: 320px; /* Thay đổi giá trị này theo yêu cầu của bạn */
+
 }
 html {
   font-family: monospace, Helvetica, Arial, sans-serif;
@@ -1000,13 +1002,14 @@ header.hidden {
   background-color: #E5D283;
   overflow: hidden;
   color: #333;
-  line-height: 2;
   text-align: center;
 }
 
 .footer h1 {
   color: #4F709C;
   font-size: 4rem;
+  padding: 50px 0;
+
 }
 .section {
   height: 1000px; /* Placeholder height for each section */
