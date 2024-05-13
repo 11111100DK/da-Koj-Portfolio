@@ -7,6 +7,10 @@
         display: none;
         overflow: hidden;  
       }
+      #home{
+        position: relative;
+
+      }
       .mobile-menu-btn{
 
         padding: 20px;
@@ -19,12 +23,22 @@
         padding: 20px;
 
       }
+      .portfolio span {
+        font-size: 3rem;
+
+      }
+      
+      .portfolio a {
+
+        font-size: 4rem;
+ 
+      }
 
       .view-btn1,
       .view-btn2 {
         margin: 2px;
-        padding: 10px;
-        width: 40%;
+        padding: 5px;
+        width: 20%;
 
 
       }
@@ -58,7 +72,16 @@
         height: 25%;
 
       }
+      .hello .vie h1 {
+        font-size: 4rem;
+        letter-spacing: -0.5rem;
 
+      }
+      .hello .name h2{
+
+        font-size: 6rem;
+ 
+      }
       .hello .name {
         width: 100%;
         height: 25%;
