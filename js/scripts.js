@@ -1,3 +1,13 @@
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("content");
+
+  // Ẩn loader và hiển thị nội dung khi trang đã load
+  loader.style.display = "none";
+  content.style.display = "block";
+});
+
+
 window.onload = function() {
   // Scroll lên đầu trang
   window.scrollTo(0, 0);
