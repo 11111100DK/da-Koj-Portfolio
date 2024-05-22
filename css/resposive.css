@@ -196,8 +196,7 @@ margin: 5px 5px 5px 0;
     height: max-content;
     margin-bottom: 20px;
   }
-  #visit {
-  }
+
   .visit-btn {
     font-size: 1rem;
   }
@@ -224,7 +223,14 @@ margin: 5px 5px 5px 0;
     width: 100%;
 
   }
+  .container .project-title h1 {
+    font-size: 2rem;
+
+  }
+  .container .project {
+    display: inline-block;
   
+  }
 }
 
   @media (min-width: 740px) and (max-width: 1023px) {
@@ -276,5 +282,13 @@ margin: 5px 5px 5px 0;
       .container .main {
         width: 100%;
     
+      }
+      .container .project-title h1 {
+        font-size: 2.5rem;
+    
+      }
+      .container .project {
+        display: inline-block;
+      
       }
   }

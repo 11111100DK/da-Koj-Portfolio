@@ -87,7 +87,6 @@
   margin-top: 15px;
   border: none;
   text-align: center;
-  -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -1104,19 +1103,42 @@ header.hidden {
 
 }
 
+.container .project-description ul {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1;  
+  margin: 0 0 0 10%;
+
+}
+
 .container .gallery3{
   column-count: 3;
   margin: 5%;
 }
 
-.container .gallery3 img {
+.container .gallery1{
+  column-count: 1;
+  margin: 5%;
+}
+
+.container .gallery2{
+  column-count: 2;
+  margin: 5%;
+}
+
+.container .gallery4{
+  column-count: 4;
+  margin: 5%;
+}
+
+.container .gallery img {
   width: 100%;
   height: auto;
   display: inline-block;
   margin-bottom: 6.2%;
 }
 
-.container .gallery3 img:hover {
+.container .gallery img:hover {
   filter: brightness(50%); /* Thêm dòng này */}
 
 
@@ -1137,8 +1159,8 @@ header.hidden {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .close {

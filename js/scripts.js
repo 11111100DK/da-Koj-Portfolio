@@ -304,7 +304,9 @@ function runCounter(elementId, target, duration, isDate = false, isFloat = false
     slides[slideIndex].style.display = "block";
   }
 
-  document.querySelector('.project1').addEventListener('click', function() {
-    window.open('./Project/project1.html', '_blank');
-});
+  for (let i = 1; i <= 10; i++) {
+    document.querySelector('.project' + i).addEventListener('click', function() {
+      window.open('./Project/project' + i + '.html', '_blank');
+    });
+  }
 
