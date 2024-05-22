@@ -51,6 +51,9 @@
         width: 30%;
         left: 34%;
       }
+      .slider .text {
+        font-size: 0.5rem;
+      }
       .slider #next{
         position: absolute;
         right: 5%;
@@ -158,7 +161,7 @@ margin: 5px 5px 5px 0;
   text-align: left;
 }
 .about .icon i {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 .about .contact p {
   text-align: center;
@@ -216,6 +219,12 @@ margin: 5px 5px 5px 0;
     color: #4F709C;
     font-size: 1rem;
   }
+
+  .container .main {
+    width: 100%;
+
+  }
+  
 }
 
   @media (min-width: 740px) and (max-width: 1023px) {
@@ -263,5 +272,9 @@ margin: 5px 5px 5px 0;
       .footer h1 {
         color: #4F709C;
         font-size: 2rem;
+      }
+      .container .main {
+        width: 100%;
+    
       }
   }

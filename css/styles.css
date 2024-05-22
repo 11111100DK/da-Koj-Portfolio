@@ -745,8 +745,11 @@ header.hidden {
   flex: 0 0 auto;
   width: 300px;
   height: auto;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+
   background-color: #F0F0F0;
+  box-shadow: #00000028 0px 5px 20px 1px;
 }
 
 .project-card:hover .project-thumb {
@@ -1120,7 +1123,7 @@ header.hidden {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 1001; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
