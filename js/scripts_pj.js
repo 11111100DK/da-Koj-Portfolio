@@ -1,3 +1,11 @@
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("content");
+
+  // Ẩn loader và hiển thị nội dung khi trang đã load
+  loader.style.display = "none";
+  content.style.display = "block";
+});
 // Get the modal
 var modal = document.getElementById("myModal");
 
