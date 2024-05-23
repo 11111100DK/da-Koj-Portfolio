@@ -1,13 +1,22 @@
-window.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     typeWriter("Please wait a second", "loading-text", 100);
   });
   
   window.addEventListener("load", function() {
-    const loader = document.getElementById("loader");
-    const intro = document.getElementById("intro");
+    const img = document.querySelector("#intro img");
+    img.addEventListener("load", function() {
+      const loader = document.getElementById("loader");
+      const intro = document.getElementById("intro");
   
-    // Ẩn loader và hiển thị phần intro khi tất cả tài nguyên đã load xong
-    loader.style.display = "none";
+      // Ẩn loader và hiển thị phần intro khi hình ảnh đã load xong
+      loader.style.display = "none";
+    });
+  
+    // Đề phòng trường hợp hình ảnh đã được cache và load ngay lập tức
+    if (img.complete) {
+      const event = new Event('load');
+      img.dispatchEvent(event);
+    }
   });
   
   // Hàm để tạo hiệu ứng đánh máy
@@ -22,7 +31,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     type();
   }
-
+  
   
 window.onload = function() {
     // Scroll lên đầu trang
