@@ -1,11 +1,28 @@
-window.addEventListener("load", function () {
-  const loader = document.getElementById("loader");
-  const content = document.getElementById("content");
-
-  // Ẩn loader và hiển thị nội dung khi trang đã load
-  loader.style.display = "none";
-  content.style.display = "block";
+window.addEventListener("DOMContentLoaded", function() {
+  typeWriter("Please wait a second", "loading-text", 100);
 });
+
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+  const intro = document.getElementById("intro");
+
+  // Ẩn loader và hiển thị phần intro khi tất cả tài nguyên đã load xong
+  loader.style.display = "none";
+});
+
+// Hàm để tạo hiệu ứng đánh máy
+function typeWriter(text, elementId, delay = 200) {
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      document.getElementById(elementId).innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, delay); // Thời gian lặp lại giữa các ký tự
+    }
+  }
+  type();
+}
+
 
 
 window.onload = function() {
